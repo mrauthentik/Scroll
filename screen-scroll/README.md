@@ -1,54 +1,94 @@
-# React + TypeScript + Vite
+# Screen Scroll Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React/TypeScript project demonstrating smooth scrolling functionality using the `useScrollTo` hook. This project is built with Vite and showcases how to create reusable components for scrolling to specific points on a webpage.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project provides a practical example of implementing smooth scrolling in a React application. It includes a custom hook, `useScrollTo`, which allows you to easily scroll to a specified height on the page with customizable behavior and offset.  The project aims to provide a clean and understandable implementation for developers looking to add smooth scrolling to their React applications.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Follow these steps to set up the project locally:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1.  **Clone the repository:**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+    ```bash
+    git clone <repository-url>
+    cd screen-scroll
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2.  **Install dependencies:**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    This will start the Vite development server, and you can view the project in your browser at the address provided (usually `http://localhost:5173`).
+
+## Usage
+
+Once the development server is running, you can interact with the demo to see the scrolling functionality in action.
+
+*   The `ScrollDemo` component provides a button that, when clicked, scrolls the page to a height of 500px.
+
+*   The `ScrollToButton` component can be used to create custom scroll buttons with specified heights, labels, behavior, and offsets.
+
+You can integrate the `useScrollTo` hook and the provided components into your own React projects to add smooth scrolling functionality.
+
+## Features
+
+*   **`useScrollTo` Hook:**  A reusable hook for triggering smooth scrolling to a specified height.
+*   **Customizable Scrolling:**  Options for customizing scroll behavior (e.g., `smooth` or `auto`) and offset.
+*   **`ScrollToButton` Component:**  A pre-built button component for easy integration of scrolling functionality.
+*   **React/TypeScript:**  Built with React and TypeScript for type safety and maintainability.
+*   **Vite:**  Utilizes Vite for fast development and build times.
+
+## Technologies Used
+
+| Technology   | Description                               |
+| :----------- | :---------------------------------------- |
+| React        | JavaScript library for building UIs       |
+| TypeScript   | Superset of JavaScript with static typing |
+| Vite         | Build tool for fast development           |
+| ESLint       |  For code linting and formatting.        |
+| React Hooks  |  For managing state and side effects in functional components.       |
+
+## Contributing
+
+Contributions are welcome! Here's how you can contribute to the project:
+
+1.  **Fork the repository.**
+2.  **Create a new branch for your feature or bug fix:**
+
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+
+3.  **Make your changes and commit them:**
+
+    ```bash
+    git add .
+    git commit -m "Add your descriptive commit message"
+    ```
+
+4.  **Push your changes to your forked repository:**
+
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+
+5.  **Submit a pull request to the main repository.**
+
+Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+[![Built with Dokugen](https://img.shields.io/badge/Built%20with-Dokugen-brightgreen)](https://github.com/samueltuoyo15/Dokugen)
