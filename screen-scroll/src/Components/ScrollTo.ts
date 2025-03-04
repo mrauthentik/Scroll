@@ -5,8 +5,7 @@ interface ScrollOptions {
   offset?: number;
 }
 
-const useScrollTo = (id: string, options: ScrollOptions = {}) => {
-    const elem
+const useScrollTo = () => {
   const scrollToHeight = useCallback((height: number, options?: ScrollOptions) => {
     const { behavior = "smooth", offset = 0 } = options || {};
     
