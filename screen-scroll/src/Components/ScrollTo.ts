@@ -1,9 +1,9 @@
 import { useCallback } from "react";
 
-interface ScrollOptions {
+type  ScrollOptions = {
   behavior?: ScrollBehavior;
   offset?: number;
-}
+};
 
 const useScrollTo = () => {
   const scrollToHeight = useCallback((height: number, options?: ScrollOptions) => {
