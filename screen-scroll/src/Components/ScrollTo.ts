@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 
-type  ScrollOptions = {
+type ScrollOptions = {
   behavior?: ScrollBehavior;
   offset?: number;
 };
