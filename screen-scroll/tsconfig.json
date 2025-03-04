@@ -1,13 +1,29 @@
+// {
+//   "compilerOptions": {
+//     "jsx": "react-jsx",
+//     "moduleResolution": "node",
+//     "esModuleInterop": true,
+//     "strict": true
+//   },
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ]
+// }
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
+    "outDir": "dist",
+    "strict": true,
+    "jsx": "react-jsx",
     "esModuleInterop": true,
-    "strict": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "declaration": true
   },
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "include": ["src"]
 }
+
