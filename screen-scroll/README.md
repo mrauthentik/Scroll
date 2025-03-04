@@ -6,6 +6,45 @@ A simple React/TypeScript project demonstrating smooth scrolling functionality u
 
 This project provides a practical example of implementing smooth scrolling in a React application. It includes a custom hook, `useScrollTo`, which allows you to easily scroll to a specified height on the page with customizable behavior and offset.  The project aims to provide a clean and understandable implementation for developers looking to add smooth scrolling to their React applications.
 
+# Scroll
+# react-screen-scroll
+
+A simple React hook to scroll to a specific position on the page.
+
+## 🚀 Installation
+```sh
+npm install react-scroll-to-hook
+```
+## 🛠️ Usage
+
+```sh
+import useScrollTo from "react-scroll-to-hook";
+
+function MyComponent() {
+  const scrollTo = useScrollTo();
+
+  return (
+    <button onClick={() => scrollTo(500)}>Scroll to 500px</button>
+  );
+}
+```
+
+## 🔧 API
+## useScrollTo()
+
+```sh
+const scrollTo = useScrollTo();
+scrollTo(500, { behavior: "smooth" });
+
+```
+
+## 📌 Todo
+Add <ScrollToButton /> component
+Improve accessibility
+
+## 📢 Contributions
+Feel free to open an issue or PR on GitHub!
+
 ## Installation
 
 Follow these steps to set up the project locally:
@@ -91,4 +130,4 @@ Please ensure your code adheres to the project's coding standards and includes a
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-[![Built with Dokugen](https://img.shields.io/badge/Built%20with-Dokugen-brightgreen)](https://github.com/samueltuoyo15/Dokugen)
+ReadMe: [![Built with Dokugen](https://img.shields.io/badge/Built%20with-Dokugen-brightgreen)](https://github.com/samueltuoyo15/Dokugen)
