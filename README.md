@@ -5,12 +5,12 @@ A simple React hook to scroll to a specific position on the page.
 
 ## 🚀 Installation
 ```sh
-npm install react-scroll-to-hook
+npm install react-screen-scroll
 ```
 ## 🛠️ Usage
 
 ```sh
-import useScrollTo from "react-scroll-to-hook";
+import useScrollTo from "react-screen-scroll";
 
 function MyComponent() {
   const scrollTo = useScrollTo();
